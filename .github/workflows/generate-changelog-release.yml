@@ -48,7 +48,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: ${{ fromJson( needs.defaults.outputs.stream ) }}
+        version: ${{ fromJson( needs.defaults.outputs.streams ) }}
     steps:
       - name: Checkout last 500 commits (for <commits> to work)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
