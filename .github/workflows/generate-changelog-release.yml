@@ -1,4 +1,5 @@
 on:
+  push:
   schedule:
     - cron: '05 11 * * *' # 11:05am UTC everyday
   workflow_call:
