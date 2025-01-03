@@ -36,7 +36,7 @@ jobs:
       - name: Get stream with fallback
         id: streams
         run: |
-          if [ ${{ inputs.stream_name }} == "" ] ; then
+          if [ "${{ inputs.stream_name }}" == "" ] ; then
             echo "stream_names=[\"latest\"]" >> $GITHUB_OUTPUT
             exit 0
           fi
